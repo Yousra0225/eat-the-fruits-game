@@ -3,6 +3,7 @@ import Fruits from './fruits';
 import Hungries from './hungries';
 import KeyManager from './keyManager';
 
+
 export default class Game {
     /**
      * Constructeur de la classe Game
@@ -97,7 +98,7 @@ export default class Game {
           this.draw();
           this.checkCollisions();
 
-          this.animationFrame = window.requestAnimationFrame(animateBalls);
+          this.animationFrame = window.requestAnimationFrame(animateGame);
         };
       
         if (this.animationRunning) {
