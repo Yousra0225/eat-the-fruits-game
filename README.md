@@ -23,6 +23,15 @@ In this arcade-style game, the player controls a character that moves across the
 -  Life system with heart icons
 -  Start and stop game with a button
 
+## 🧠 Object-Oriented Programming (OOP)
+
+This project uses **object-oriented programming** (OOP) principles to structure the game logic. Key concepts applied include:
+
+- **Encapsulation**: Game elements like the player, fruits, and enemies are represented by classes with specific properties and methods.
+- **Inheritance**: A `MobileObject` class extends from a generic `GameObject` class, allowing shared logic for positioning, while adding motion-specific behavior.
+- **Modularity**: Each object type (Greedy, Fruit, Hungry) is separated into its own module/file, making the code more maintainable and scalable.
+- **Reusability**: By using inheritance and method overriding, common behaviors are reused and extended where necessary.
+
 ---
 
 ## 🧰 Technologies Used
