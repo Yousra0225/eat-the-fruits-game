@@ -64,7 +64,26 @@ export default class Hungries extends GameObject {
         );
     }
 
+    /**
+     * Methode pour détecter les fruits autour d'un hungry
+     * @param {object} hungry - Le hungry à vérifier
+     * @param {number} radius - Le rayon autour du hungry pour chercher des fruits
+     * @returns {Array} - Liste des fruits dans le rayon
+     */
+    getNearbyFruits(hungry, radius) {
+        let nearbyFruits = [];
+        this.fruits.fruits.forEach(fruit => {
+            const dx = fruit.x - hungry.x;
+            const dy = fruit.y - hungry.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance <= radius) {
+                nearbyFruits.push(fruit);
+            }
+        });
+        return nearbyFruits;
+    }
 
+    
     moveHungries() {
         const speed = 3;
         this.hungries.forEach(hungry => {
