@@ -4,7 +4,7 @@
 
 ## 🕹️ Game Preview
 
-![Game Preview](./assets/images/preview.png)  
+![Game Preview](./src/scripts/assets/images/eatfruit.png)  
 *Eat the fruits, avoid the Hungries!*
 
 ## 📝 Description
@@ -32,4 +32,3 @@ In this arcade-style game, the player controls a character that moves across the
 - HTML Canvas API
 
 ---
-
