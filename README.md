@@ -2,10 +2,9 @@
 
 **Miam** is a fun little JavaScript game where your character (the Greedy) must eat as many fruits as possible while avoiding dangerous enemies (the Hungries). The game is built using pure JavaScript and HTML5 Canvas.
 
-## 🕹️ Game Preview
-
 ![Game Preview](./src/scripts/assets/images/eatfruit.png)  
 *Eat the fruits, avoid the Hungries!*
+
 
 ## 📝 Description
 
