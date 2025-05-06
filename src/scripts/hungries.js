@@ -103,7 +103,7 @@ export default class Hungries extends GameObject {
             let target = hungry.target;
             if (!target) {
                 const nearbyFruits = this.getNearbyFruits(hungry, proximityRadius);
-                if (nearbyFruits > 0) {
+                if (nearbyFruits.length > 0) {
                     // Si des fruits sont trouvés, le 'Hungry' choisit un fruit au hasard
                     target = nearbyFruits[Math.floor(Math.random() * nearbyFruits.length)];                
                 } else {
