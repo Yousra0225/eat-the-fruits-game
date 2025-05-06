@@ -79,3 +79,4 @@ export default class KeyManager {
        return ! this.oneKeyPressed();
     }
  }
+ 
