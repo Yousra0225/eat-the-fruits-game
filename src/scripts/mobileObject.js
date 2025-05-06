@@ -21,11 +21,11 @@ export default class MobileObject extends GameObject{
         this.x += this.speedX;
         this.y += this.speedY;
 
-        if(this.x <= 0 || this.x + Ball.BALL_WIDTH >= canvas.width){
-            this.deltaX = -this.deltaX;
+        if(this.x <= 0 || this.x + this.width >= canvas.width){
+            this.speedX = -this.speedX;
         }
-        if(this.y <= 0 || this.y + Ball.BALL_HEIGHT >= canvas.height){
-            this.deltaY = -this.deltaY;
+        if(this.y <= 0 || this.y + this.height >= canvas.height){
+            this.speedY = -this.speedY;
         }
     }
 }
